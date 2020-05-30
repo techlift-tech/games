@@ -1,0 +1,43 @@
+{
+ "creation": "2020-04-03 13:06:00.695636",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "contact_number",
+  "game_ticket"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "game_ticket",
+   "fieldtype": "Long Text",
+   "label": "Game Ticket",
+   "read_only": 1,
+   "set_only_once": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-20 19:44:39.375905",
+ "modified_by": "Administrator",
+ "module": "Games",
+ "name": "Game Players",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

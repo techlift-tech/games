@@ -1,0 +1,93 @@
+{
+ "autoname": "GAME.####",
+ "creation": "2020-04-03 13:07:23.095495",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "title",
+  "game_type",
+  "get_players_from",
+  "get_players",
+  "game_players",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "game_players",
+   "fieldtype": "Table",
+   "label": "Game Players",
+   "options": "Game Players",
+   "reqd": 1
+  },
+  {
+   "fieldname": "game_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Game Type",
+   "options": "Game Type",
+   "reqd": 1
+  },
+  {
+   "default": "All Contacts",
+   "fieldname": "get_players_from",
+   "fieldtype": "Link",
+   "label": "Get Players From",
+   "options": "Contact Group"
+  },
+  {
+   "fieldname": "get_players",
+   "fieldtype": "Button",
+   "label": "Get Players"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Game",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-04-04 13:55:23.976488",
+ "modified_by": "Administrator",
+ "module": "Games",
+ "name": "Game",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
